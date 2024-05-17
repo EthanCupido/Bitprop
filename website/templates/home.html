@@ -1,0 +1,25 @@
+{% extends "base.html"%}{% block title%}Home{% endblock %}
+
+
+{% block content %}
+<br />
+<div class="video" align="center" >
+    <video width="600" height="300px"   autoplay muted >
+        <source src={{url_for('static', filename='stock video.mp4')}} type="video/mp4">
+    </video>
+
+</div> 
+<br />
+<div class="Enter">
+    <h3 align="center">Checkout our new flats!</h3>
+    <button type="button"  class="btn btn-primary" id="enter" onClick="redirect()">Check!</button>
+</div>
+
+<script type="text/javascript">
+    function redirect() {
+        window.location.href = "/public"
+    }
+</script>
+
+
+{% endblock %}

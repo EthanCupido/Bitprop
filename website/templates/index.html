@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="stylesheet"  href={{url_for('static', filename='css/style.css')}}>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            </div class="icon">
+                <div class="logo">
+                    <img  src={{url_for('static', filename='logo.png')}} alt="Bitprop" >
+                </div>    
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Contact us</a></li>
+
+                </ul>
+                <button class="login">Agents login</button>
+            </div> 
+                
+            <div class="video" >
+                <video autoplay muted>
+                    <source src={{url_for('static', filename='stock video.mp4')}} type="video/mp4">
+                </video>
+            
+            </div> 
+
+
+
+        </div>
+    </div>
+    <div class="flats_text">
+        <p>
+        Check available flats now
+        </p>
+        
+    </div>
+    <button class="check_flats">Click here</button> 
+      
+    
+    
+    
+</body>
+</html>

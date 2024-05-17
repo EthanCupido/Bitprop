@@ -1,0 +1,65 @@
+#home{
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#home:hover{
+    font-weight: bolder;
+    color: brown;
+
+}
+#signup{
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#signup:hover{
+    font-weight: bolder;
+    color: brown;
+
+}
+#login{
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#login:hover{
+    font-weight: bolder;
+    color: brown;
+
+}
+#logout{
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#logout:hover{
+    font-weight: bolder;
+    color: brown;
+
+}
+#agents{
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#agents:hover{
+    font-weight: bolder;
+    color: brown;
+
+}
+#public{
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#public:hover{
+    font-weight: bolder;
+    color: brown;
+
+}
+
+.navbar-toggler{
+    width: 50px;
+    height: 20px;
+}

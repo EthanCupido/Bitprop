@@ -1,0 +1,38 @@
+{% extends "base.html"%}{% block title%}Public{% endblock %}
+
+
+{% block content %}
+<br>
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Place location</th>
+            <th>Flats available</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        {% for prop in data %}
+        <tr>
+            <td>{{ prop.id }}</td>
+            <td>{{ prop.place_loc }}</td>
+            <td>{{ prop.flats }}</td>
+            
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<form method="POST" >
+    <h3 align="center">Contact an agent</h3>
+    <div class="form-group">
+        <label for ="prop_id">Enter property id</label>
+        <input type="number" class="form-control" id="prop_id" name="prop_id" placeholder="Enter the property id as seen in the table." required>
+    </div>
+    <textarea name="note" id="note" class="form-control"></textarea>
+    <br>
+    <div align="center">
+        <button type="submit" class="btn btn-primary">Send request</button>
+    </div>
+</form>
+{% endblock %}
